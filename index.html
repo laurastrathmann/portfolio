@@ -210,7 +210,11 @@
     .hero-bg {
       position: absolute;
       inset: 0;
-      background-image: url("portfolio_website/images/backgrounds/Hero_background.png");
+      /* ================================================
+         HINTERGRUNDBILD HERO
+         Datei: backgrounds/Hero_background.png
+      ================================================ */
+      background-image: url("backgrounds/Hero_background.png");
       background-size: cover;
       background-position: center;
       filter: brightness(0.4);
@@ -351,12 +355,8 @@
     }
 
     @keyframes scroll {
-      from {
-        transform: translateX(0);
-      }
-      to {
-        transform: translateX(-50%);
-      }
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
     }
 
     #ueber {
@@ -369,7 +369,11 @@
       content: "";
       position: absolute;
       inset: 0;
-      background-image: url("portfolio_website/images/backgrounds/ueber-bg.png");
+      /* ================================================
+         HINTERGRUNDBILD ÜBER MICH
+         Datei: backgrounds/ueber-bg.png
+      ================================================ */
+      background-image: url("backgrounds/ueber-bg.png");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -679,7 +683,12 @@
       left: 0;
       width: 100%;
       height: 140px;
-      background: url("portfolio_website/images/backgrounds/paper-rip-top.png") top center / cover no-repeat;
+      /* ================================================
+         HINTERGRUNDBILD D&D RISS OBEN
+         Datei: backgrounds/paper-rip-top.png
+         → Datei noch nicht vorhanden, bitte hochladen
+      ================================================ */
+      background: url("backgrounds/paper-rip-top.png") top center / cover no-repeat;
       z-index: 3;
       pointer-events: none;
     }
@@ -687,9 +696,14 @@
     .dnd-bg-texture {
       position: absolute;
       inset: 0;
+      /* ================================================
+         HINTERGRUNDBILD D&D TEXTUR
+         Datei: backgrounds/paper-texture-dark.png
+         → Datei noch nicht vorhanden, bitte hochladen
+      ================================================ */
       background:
         linear-gradient(rgba(13,13,13,0.9), rgba(13,13,13,0.96)),
-        url("portfolio_website/images/backgrounds/paper-texture-dark.png") center / cover no-repeat;
+        url("backgrounds/paper-texture-dark.png") center / cover no-repeat;
       opacity: 0.35;
       z-index: 0;
     }
@@ -858,95 +872,30 @@
     }
 
     @media (max-width: 1024px) {
-      .dnd-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .dnd-device-row {
-        grid-template-columns: 1fr;
-      }
-
-      .dnd-device-phone {
-        max-width: 220px;
-      }
+      .dnd-grid { grid-template-columns: 1fr; }
+      .dnd-device-row { grid-template-columns: 1fr; }
+      .dnd-device-phone { max-width: 220px; }
     }
 
     @media (max-width: 768px) {
-      #dnd-project {
-        padding: 110px 5% 80px;
-      }
-
-      .dnd-rip-top {
-        height: 90px;
-      }
-
-      .dnd-collage {
-        grid-template-columns: 1fr;
-      }
-
-      .dnd-collage img:nth-child(1) {
-        grid-row: auto;
-        min-height: 320px;
-      }
-
-      .dnd-gallery-3 {
-        grid-template-columns: 1fr;
-      }
-
-      :root {
-        --section-pad: 64px 5%;
-      }
-
-      .nav-links {
-        display: none;
-      }
-
-      #ueber {
-        grid-template-columns: 1fr;
-        gap: 40px;
-      }
-
-      .ueber-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .case-card {
-        grid-template-columns: 1fr;
-      }
-
-      .case-media {
-        min-height: 220px;
-      }
-
-      .dienste-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .warum-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .workflow-step {
-        grid-template-columns: 48px 1fr;
-        gap: 20px;
-      }
-
-      .testimonial {
-        grid-template-columns: 1fr;
-      }
-
-      .team-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .footer-top {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-      }
+      #dnd-project { padding: 110px 5% 80px; }
+      .dnd-rip-top { height: 90px; }
+      .dnd-collage { grid-template-columns: 1fr; }
+      .dnd-collage img:nth-child(1) { grid-row: auto; min-height: 320px; }
+      .dnd-gallery-3 { grid-template-columns: 1fr; }
+      :root { --section-pad: 64px 5%; }
+      .nav-links { display: none; }
+      #ueber { grid-template-columns: 1fr; gap: 40px; }
+      .ueber-grid { grid-template-columns: 1fr 1fr; }
+      .case-card { grid-template-columns: 1fr; }
+      .case-media { min-height: 220px; }
+      .dienste-grid { grid-template-columns: 1fr; }
+      .warum-grid { grid-template-columns: 1fr; }
+      .workflow-step { grid-template-columns: 48px 1fr; gap: 20px; }
+      .testimonial { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-top { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; text-align: center; }
     }
 
     #cta {
@@ -969,7 +918,12 @@
     .cta-bg {
       position: absolute;
       inset: 0;
-      background-image: url("portfolio_website/images/backgrounds/cta-bg.jpg");
+      /* ================================================
+         HINTERGRUNDBILD CTA
+         Datei: backgrounds/cta-bg.jpg
+         → Datei noch nicht vorhanden, bitte hochladen
+      ================================================ */
+      background-image: url("backgrounds/cta-bg.jpg");
       background-size: cover;
       background-position: center;
     }
@@ -1211,9 +1165,7 @@
 </head>
 <body>
 
-  <!-- ============================================================
-       NAVIGATION
-  ============================================================ -->
+  <!-- NAVIGATION -->
   <nav>
     <ul class="nav-links">
       <li><a href="#hero">Hero</a></li>
@@ -1230,9 +1182,7 @@
     </div>
   </nav>
 
-  <!-- ============================================================
-       HERO
-  ============================================================ -->
+  <!-- HERO -->
   <section id="hero">
     <div class="hero-bg"></div>
     <div class="hero-content fade-up visible">
@@ -1249,68 +1199,42 @@
     </div>
   </section>
 
-  <!-- ============================================================
-       CLIENT LOGOS
-  ============================================================ -->
+  <!-- CLIENT LOGOS -->
   <div id="clients">
     <div class="marquee-inner">
       <div class="marquee-track">
-        <img src="portfolio_website/images/logos/aldi.svg" alt="Aldi Logo">
-        <img src="portfolio_website/images/logos/ATFP.png" alt="ATFP Logo">
-        <img src="portfolio_website/images/logos/Clickresult.png" alt="Clickresult Logo">
-        <img src="portfolio_website/images/logos/DW.png" alt="DW Logo">
-        <img src="portfolio_website/images/logos/Equinor.svg" alt="Equinor Logo">
-        <img src="portfolio_website/images/logos/Falstaff.png" alt="Falstaff Logo">
-        <img src="portfolio_website/images/logos/Fischer.png" alt="Fischer Logo">
-        <img src="portfolio_website/images/logos/Hansetalent.png" alt="Hansetalent Logo">
-        <img src="portfolio_website/images/logos/Immomarketer.png" alt="Immomarketer Logo">
-        <img src="portfolio_website/images/logos/InboundZone.png" alt="InboundZone Logo">
-        <img src="portfolio_website/images/logos/Leuchter.png" alt="Leuchter Logo">
-
-        <img src="portfolio_website/images/logos/aldi.svg" alt="Aldi Logo">
-        <img src="portfolio_website/images/logos/ATFP.png" alt="ATFP Logo">
-        <img src="portfolio_website/images/logos/Clickresult.png" alt="Clickresult Logo">
-        <img src="portfolio_website/images/logos/DW.png" alt="DW Logo">
-        <img src="portfolio_website/images/logos/Equinor.svg" alt="Equinor Logo">
-        <img src="portfolio_website/images/logos/Falstaff.png" alt="Falstaff Logo">
-        <img src="portfolio_website/images/logos/Fischer.png" alt="Fischer Logo">
-        <img src="portfolio_website/images/logos/Hansetalent.png" alt="Hansetalent Logo">
-        <img src="portfolio_website/images/logos/Immomarketer.png" alt="Immomarketer Logo">
-        <img src="portfolio_website/images/logos/InboundZone.png" alt="InboundZone Logo">
-        <img src="portfolio_website/images/logos/Leuchter.png" alt="Leuchter Logo">
-
-        <img src="portfolio_website/images/logos/aldi.svg" alt="Aldi Logo">
-        <img src="portfolio_website/images/logos/ATFP.png" alt="ATFP Logo">
-        <img src="portfolio_website/images/logos/Clickresult.png" alt="Clickresult Logo">
-        <img src="portfolio_website/images/logos/DW.png" alt="DW Logo">
-        <img src="portfolio_website/images/logos/Equinor.svg" alt="Equinor Logo">
-        <img src="portfolio_website/images/logos/Falstaff.png" alt="Falstaff Logo">
-        <img src="portfolio_website/images/logos/Fischer.png" alt="Fischer Logo">
-        <img src="portfolio_website/images/logos/Hansetalent.png" alt="Hansetalent Logo">
-        <img src="portfolio_website/images/logos/Immomarketer.png" alt="Immomarketer Logo">
-        <img src="portfolio_website/images/logos/InboundZone.png" alt="InboundZone Logo">
-        <img src="portfolio_website/images/logos/Leuchter.png" alt="Leuchter Logo">
-        
-        <img src="portfolio_website/images/logos/aldi.svg" alt="Aldi Logo">
-        <img src="portfolio_website/images/logos/ATFP.png" alt="ATFP Logo">
-        <img src="portfolio_website/images/logos/Clickresult.png" alt="Clickresult Logo">
-        <img src="portfolio_website/images/logos/DW.png" alt="DW Logo">
-        <img src="portfolio_website/images/logos/Equinor.svg" alt="Equinor Logo">
-        <img src="portfolio_website/images/logos/Falstaff.png" alt="Falstaff Logo">
-        <img src="portfolio_website/images/logos/Fischer.png" alt="Fischer Logo">
-        <img src="portfolio_website/images/logos/Hansetalent.png" alt="Hansetalent Logo">
-        <img src="portfolio_website/images/logos/Immomarketer.png" alt="Immomarketer Logo">
-        <img src="portfolio_website/images/logos/InboundZone.png" alt="InboundZone Logo">
-        <img src="portfolio_website/images/logos/Leuchter.png" alt="Leuchter Logo">
-
-        
+        <!-- ================================================
+             LOGOS – Ordner: logos/
+             Alle Dateien direkt im logos/ Ordner
+        ================================================ -->
+        <img src="logos/aldi.svg"           alt="Aldi Logo">
+        <img src="logos/ATFP.png"           alt="ATFP Logo">
+        <img src="logos/Clickresult.png"    alt="Clickresult Logo">
+        <img src="logos/DW.png"             alt="DW Logo">
+        <img src="logos/Equinor.svg"        alt="Equinor Logo">
+        <img src="logos/Falstaff.png"       alt="Falstaff Logo">
+        <img src="logos/Fischer.png"        alt="Fischer Logo">
+        <img src="logos/Hansetalent.png"    alt="Hansetalent Logo">
+        <img src="logos/Immomarketer.png"   alt="Immomarketer Logo">
+        <img src="logos/InboundZone.png"    alt="InboundZone Logo">
+        <img src="logos/Leuchter.png"       alt="Leuchter Logo">
+        <!-- Duplikat für nahtloses Laufband -->
+        <img src="logos/aldi.svg"           alt="Aldi Logo">
+        <img src="logos/ATFP.png"           alt="ATFP Logo">
+        <img src="logos/Clickresult.png"    alt="Clickresult Logo">
+        <img src="logos/DW.png"             alt="DW Logo">
+        <img src="logos/Equinor.svg"        alt="Equinor Logo">
+        <img src="logos/Falstaff.png"       alt="Falstaff Logo">
+        <img src="logos/Fischer.png"        alt="Fischer Logo">
+        <img src="logos/Hansetalent.png"    alt="Hansetalent Logo">
+        <img src="logos/Immomarketer.png"   alt="Immomarketer Logo">
+        <img src="logos/InboundZone.png"    alt="InboundZone Logo">
+        <img src="logos/Leuchter.png"       alt="Leuchter Logo">
       </div>
     </div>
   </div>
 
-  <!-- ============================================================
-       ÜBER MICH
-  ============================================================ -->
+  <!-- ÜBER MICH -->
   <section>
     <div id="ueber">
       <div class="ueber-bg"></div>
@@ -1331,29 +1255,30 @@
         </div>
 
         <div class="ueber-grid fade-up visible">
+          <!-- ================================================
+               ÜBER MICH BILDER – Ordner: about/
+          ================================================ -->
           <div class="ueber-grid-item tall">
-            <img src="portfolio_website/images/about/IMG_6438.png" alt="Portrait von Laura Strathmann">
+            <img src="about/IMG_6438.png" alt="Portrait von Laura Strathmann">
           </div>
           <div class="ueber-grid-item">
-            <img src="portfolio_website/images/about/IMG_3802.JPG" alt="Laura Strathmann Foto 2">
+            <img src="about/IMG_3802.JPG" alt="Laura Strathmann Foto 2">
           </div>
           <div class="ueber-grid-item">
-            <img src="portfolio_website/images/about/1ec1d151-5897-4b3f-b34c-9340d15b8fd0.JPG" alt="Laura Strathmann Foto 3">
+            <img src="about/1ec1d151-5897-4b3f-b34c-9340d15b8fd0.JPG" alt="Laura Strathmann Foto 3">
           </div>
           <div class="ueber-grid-item">
-            <img src="portfolio_website/images/about/Snapchat-543440070.jpg" alt="Laura Strathmann privates Foto">
+            <img src="about/Snapchat-543440070.jpg" alt="Laura Strathmann privates Foto">
           </div>
           <div class="ueber-grid-item">
-            <img src="portfolio_website/images/about/IMG_6439.JPG" alt="Laura Strathmann Foto 4">
+            <img src="about/IMG_6439.JPG" alt="Laura Strathmann Foto 4">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-    <!-- ============================================================
-       ÜBERBLICK
-  ============================================================ -->
+  <!-- ÜBERBLICK -->
   <section id="cases">
     <div class="section-header fade-up visible">
       <h2 class="h-display h2">Überblick</h2>
@@ -1376,7 +1301,12 @@
           </div>
         </div>
         <div class="case-media">
-          <img src="portfolio_website/images/cases/recruiting-leadgen.jpg" alt="Recruiting- und Leadgen-Creative">
+          <!-- ================================================
+               CASE BILDER – Ordner: noch nicht in GitHub!
+               Bitte Ordner "cases" anlegen und Bilder hochladen
+               Dateiname Vorschlag: recruiting-leadgen.jpg
+          ================================================ -->
+          <img src="cases/recruiting-leadgen.jpg" alt="Recruiting- und Leadgen-Creative">
         </div>
       </div>
 
@@ -1394,7 +1324,7 @@
           </div>
         </div>
         <div class="case-media">
-          <img src="portfolio_website/images/cases/immobilien-expose-social.jpg" alt="Immobilien Exposé und Social Media Gestaltung">
+          <img src="cases/immobilien-expose-social.jpg" alt="Immobilien Exposé und Social Media Gestaltung">
         </div>
       </div>
 
@@ -1412,16 +1342,14 @@
           </div>
         </div>
         <div class="case-media">
-          <img src="portfolio_website/images/cases/printmedien-flyer-poster-banner.jpg" alt="Gestaltung von Flyer, Poster, Banner und Broschüren">
+          <img src="cases/printmedien-flyer-poster-banner.jpg" alt="Gestaltung von Flyer, Poster, Banner und Broschüren">
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- ============================================================
-       AKTUELLES
-  ============================================================ -->
+  <!-- AKTUELLES -->
   <section>
     <div id="actual">
       <div class="section-header fade-up">
@@ -1430,10 +1358,13 @@
 
       <div class="actual-marquee">
         <div class="actual-marquee-track">
-
+          <!-- ================================================
+               AKTUELLE BILDER – Ordner: actual/
+               Unterordner: fav-immo/, fav-leadgen/, fav-recruiting/
+          ================================================ -->
           <div class="actual-card fade-up">
             <div class="actual-photo">
-              <img src="portfolio_website/images/actual/fav-immo/1.jpg" alt="Immobilien Leadgen Creative 1">
+              <img src="actual/fav-immo/1.jpg" alt="Immobilien Leadgen Creative 1">
             </div>
             <h4>Immobilien</h4>
             <p class="role">Leadgen</p>
@@ -1441,7 +1372,7 @@
 
           <div class="actual-card fade-up">
             <div class="actual-photo">
-              <img src="portfolio_website/images/actual/fav-leadgen/1.jpg" alt="Photovoltaik Leadgen Creative">
+              <img src="actual/fav-leadgen/1.jpg" alt="Photovoltaik Leadgen Creative">
             </div>
             <h4>Photovoltaik</h4>
             <p class="role">Leadgen</p>
@@ -1449,7 +1380,7 @@
 
           <div class="actual-card fade-up">
             <div class="actual-photo">
-              <img src="portfolio_website/images/actual/fav-immo/2.jpg" alt="Immobilien Leadgen Creative 2">
+              <img src="actual/fav-immo/2.jpg" alt="Immobilien Leadgen Creative 2">
             </div>
             <h4>Immobilien</h4>
             <p class="role">Leadgen</p>
@@ -1457,7 +1388,7 @@
 
           <div class="actual-card fade-up">
             <div class="actual-photo">
-              <img src="portfolio_website/images/actual/fav-recruiting/2.jpg" alt="Recruiting Creative Stellenanzeige 1">
+              <img src="actual/fav-recruiting/2.jpg" alt="Recruiting Creative Stellenanzeige 1">
             </div>
             <h4>Stellenanzeige</h4>
             <p class="role">Recruiting</p>
@@ -1465,7 +1396,7 @@
 
           <div class="actual-card fade-up">
             <div class="actual-photo">
-              <img src="portfolio_website/images/actual/fav-recruiting/3.jpg" alt="Recruiting Creative Stellenanzeige 2">
+              <img src="actual/fav-recruiting/3.jpg" alt="Recruiting Creative Stellenanzeige 2">
             </div>
             <h4>Stellenanzeige</h4>
             <p class="role">Recruiting</p>
@@ -1473,7 +1404,7 @@
 
           <div class="actual-card fade-up">
             <div class="actual-photo">
-              <img src="portfolio_website/images/actual/fav-leadgen/VT_ML_20251119_1.jpg" alt="Leadgen Creative Erstgespräch Autofolierung">
+              <img src="actual/fav-leadgen/VT_ML_20251119_1.jpg" alt="Leadgen Creative Erstgespräch Autofolierung">
             </div>
             <h4>Erstgespräch Autofolierung</h4>
             <p class="role">Leadgen</p>
@@ -1481,7 +1412,7 @@
 
           <div class="actual-card fade-up">
             <div class="actual-photo">
-              <img src="portfolio_website/images/actual/fav-immo/3.jpg" alt="Immobilien Leadgen Creative 3">
+              <img src="actual/fav-immo/3.jpg" alt="Immobilien Leadgen Creative 3">
             </div>
             <h4>Immobilien</h4>
             <p class="role">Leadgen</p>
@@ -1489,7 +1420,7 @@
 
           <div class="actual-card fade-up">
             <div class="actual-photo">
-              <img src="portfolio_website/images/actual/fav-immo/4.jpg" alt="Immobilien Leadgen Creative 4">
+              <img src="actual/fav-immo/4.jpg" alt="Immobilien Leadgen Creative 4">
             </div>
             <h4>Immobilien</h4>
             <p class="role">Leadgen</p>
@@ -1497,7 +1428,7 @@
 
           <div class="actual-card fade-up">
             <div class="actual-photo">
-              <img src="portfolio_website/images/actual/fav-leadgen/IZ_AppCon_20260303_4.jpg" alt="Leadgen Creative Beratung 1">
+              <img src="actual/fav-leadgen/IZ_AppCon_20260303_4.jpg" alt="Leadgen Creative Beratung 1">
             </div>
             <h4>Beratung</h4>
             <p class="role">Leadgen</p>
@@ -1505,7 +1436,7 @@
 
           <div class="actual-card fade-up">
             <div class="actual-photo">
-              <img src="portfolio_website/images/actual/fav-immo/5.jpg" alt="Immobilien Leadgen Creative 5">
+              <img src="actual/fav-immo/5.jpg" alt="Immobilien Leadgen Creative 5">
             </div>
             <h4>Immobilien</h4>
             <p class="role">Leadgen</p>
@@ -1513,7 +1444,7 @@
 
           <div class="actual-card fade-up">
             <div class="actual-photo">
-              <img src="portfolio_website/images/actual/fav-leadgen/RC_KH_20260310_7.jpg" alt="Leadgen Creative Beratung 2">
+              <img src="actual/fav-leadgen/RC_KH_20260310_7.jpg" alt="Leadgen Creative Beratung 2">
             </div>
             <h4>Beratung</h4>
             <p class="role">Leadgen</p>
@@ -1521,7 +1452,7 @@
 
           <div class="actual-card fade-up">
             <div class="actual-photo">
-              <img src="portfolio_website/images/actual/fav-leadgen/VT_Darbin_250618_2.jpg" alt="Leadgen Creative Schmuck 1">
+              <img src="actual/fav-leadgen/VT_Darbin_250618_2.jpg" alt="Leadgen Creative Schmuck 1">
             </div>
             <h4>Schmuck</h4>
             <p class="role">Leadgen</p>
@@ -1529,7 +1460,7 @@
 
           <div class="actual-card fade-up">
             <div class="actual-photo">
-              <img src="portfolio_website/images/actual/fav-leadgen/VT_TB_250725_4.jpg" alt="Leadgen Creative Schmuck 2">
+              <img src="actual/fav-leadgen/VT_TB_250725_4.jpg" alt="Leadgen Creative Schmuck 2">
             </div>
             <h4>Schmuck</h4>
             <p class="role">Leadgen</p>
@@ -1540,123 +1471,129 @@
     </div>
   </section>
 
-
-  <!-- ============================================================
-       D&D
-  ============================================================ -->
+  <!-- D&D -->
   <section id="dnd-project">
-  <div class="dnd-rip-top"></div>
-  <div class="dnd-bg-texture"></div>
+    <div class="dnd-rip-top"></div>
+    <div class="dnd-bg-texture"></div>
 
-  <div class="dnd-inner">
-    <div class="section-header fade-up">
-      <span class="section-tag">Privates Projekt</span>
-      <h2 class="h-display h2">Dungeon &amp; Dragons</h2>
-      <p>
-        Ein Herzensprojekt zwischen Storytelling, Editorial Design, Worldbuilding und digitaler Präsentation.
-      </p>
-    </div>
+    <div class="dnd-inner">
+      <div class="section-header fade-up">
+        <span class="section-tag">Privates Projekt</span>
+        <h2 class="h-display h2">Dungeon &amp; Dragons</h2>
+        <p>Ein Herzensprojekt zwischen Storytelling, Editorial Design, Worldbuilding und digitaler Präsentation.</p>
+      </div>
 
-    <div class="dnd-grid">
-      <div class="dnd-copy fade-up">
-        <h3 class="h3">About the Projekt</h3>
-        <p>
-          Aus einer kleinen Idee im Duo entstand über zwei Jahre hinweg ein kreatives
-          D&amp;D-Projekt mit eigenen Geschichten, spielbaren Encountern und einer
-          klaren visuellen Welt. Während die Texte entstanden, lag mein Fokus auf
-          der gesamten gestalterischen Ausarbeitung.
-        </p>
-        <p>
-          Dazu gehörten Layouts, Typografie, Bildsprache, Datenformate, grafische
-          Assets sowie die visuelle Struktur für Print- und Digitalanwendungen.
-          Ziel war es, eine zusammenhängende Fantasy-Welt nicht nur inhaltlich,
-          sondern auch gestalterisch erlebbar zu machen.
-        </p>
+      <div class="dnd-grid">
+        <div class="dnd-copy fade-up">
+          <h3 class="h3">About the Projekt</h3>
+          <p>
+            Aus einer kleinen Idee im Duo entstand über zwei Jahre hinweg ein kreatives
+            D&amp;D-Projekt mit eigenen Geschichten, spielbaren Encountern und einer
+            klaren visuellen Welt. Während die Texte entstanden, lag mein Fokus auf
+            der gesamten gestalterischen Ausarbeitung.
+          </p>
+          <p>
+            Dazu gehörten Layouts, Typografie, Bildsprache, Datenformate, grafische
+            Assets sowie die visuelle Struktur für Print- und Digitalanwendungen.
+            Ziel war es, eine zusammenhängende Fantasy-Welt nicht nur inhaltlich,
+            sondern auch gestalterisch erlebbar zu machen.
+          </p>
+          <div class="dnd-tags">
+            <span>Editorial Design</span>
+            <span>Print</span>
+            <span>Websitegestaltung</span>
+            <span>Spielmaps</span>
+            <span>Encounter Layouts</span>
+            <span>Grafiken</span>
+          </div>
+        </div>
 
-        <div class="dnd-tags">
-          <span>Editorial Design</span>
-          <span>Print</span>
-          <span>Websitegestaltung</span>
-          <span>Spielmaps</span>
-          <span>Encounter Layouts</span>
-          <span>Grafiken</span>
+        <div class="dnd-hero-media fade-up">
+          <div class="dnd-collage">
+            <!-- ================================================
+                 D&D BILDER – Ordner: dnd/ (noch anlegen!)
+                 Bitte in GitHub einen Ordner "dnd" erstellen
+                 und folgende Dateien hochladen:
+                 - dnd-book-cover.png
+                 - dnd-tablet-layout.png
+                 - dnd-booklet.png
+                 - dnd-map-room.png
+                 - dnd-encounter-1.png
+                 - dnd-encounter-2.png
+                 - dnd-encounter-3.png
+                 - dnd-mobile.png
+                 - dnd-website.png
+                 - dnd-map-overview.png
+                 - dnd-book-inside.png
+                 - dnd-map-room-large.png
+            ================================================ -->
+            <img src="dnd/dnd-book-cover.png"    alt="Dungeon and Dragons Buchcover">
+            <img src="dnd/dnd-tablet-layout.png" alt="Encounter Seiten auf Tablet">
+            <img src="dnd/dnd-booklet.png"       alt="Dungeon and Dragons Printlayout">
+            <img src="dnd/dnd-map-room.png"      alt="Spielmap Innenraum">
+          </div>
         </div>
       </div>
 
-      <div class="dnd-hero-media fade-up">
-        <div class="dnd-collage">
-          <img src="portfolio_website/images/dnd/dnd-book-cover.png" alt="Dungeon and Dragons Buchcover">
-          <img src="portfolio_website/images/dnd/dnd-tablet-layout.png" alt="Encounter Seiten auf Tablet">
-          <img src="portfolio_website/images/dnd/dnd-booklet.png" alt="Dungeon and Dragons Printlayout">
-          <img src="portfolio_website/images/dnd/dnd-map-room.png" alt="Spielmap Innenraum">
+      <div class="dnd-showcase fade-up">
+        <div class="dnd-showcase-text">
+          <h3 class="h3">Encounter &amp; Editorial Design</h3>
+          <p>
+            Für die Encounter wurden wiederverwendbare Seitenlayouts entwickelt,
+            die sich modular in Spielsessions einbauen lassen. Dabei stand im Fokus,
+            Lesbarkeit mit Atmosphäre zu verbinden und Regeln, Text und Gestaltung
+            sauber zusammenzuführen.
+          </p>
+        </div>
+        <div class="dnd-showcase-gallery dnd-gallery-3">
+          <img src="dnd/dnd-encounter-1.png" alt="Encounter Seite 1">
+          <img src="dnd/dnd-encounter-2.png" alt="Encounter Seite 2">
+          <img src="dnd/dnd-encounter-3.png" alt="Encounter Seite 3">
+        </div>
+      </div>
+
+      <div class="dnd-showcase fade-up">
+        <div class="dnd-showcase-text">
+          <h3 class="h3">Digitale Präsentation</h3>
+          <p>
+            Neben den Printmedien entstand auch eine digitale Präsentation des Projekts.
+            Die Herausforderung lag darin, die gestalterische Atmosphäre der Printwelt
+            trotz Plattformvorgaben und Webumgebung konsequent beizubehalten.
+          </p>
+        </div>
+        <div class="dnd-device-row">
+          <div class="dnd-device-phone">
+            <img src="dnd/dnd-mobile.png"  alt="Mobile Darstellung des Projekts">
+          </div>
+          <div class="dnd-device-desktop">
+            <img src="dnd/dnd-website.png" alt="Website Darstellung des Projekts">
+          </div>
+        </div>
+      </div>
+
+      <div class="dnd-showcase fade-up">
+        <div class="dnd-showcase-text">
+          <h3 class="h3">Grafiken &amp; Spielwelt</h3>
+          <p>
+            Ergänzt wurde das Projekt durch visuelle Elemente wie Spielmaps,
+            Buchinnenseiten und weitere grafische Assets. So entstand eine Welt,
+            die nicht nur erzählt, sondern visuell konsequent geführt wurde.
+          </p>
+        </div>
+        <div class="dnd-showcase-gallery dnd-gallery-3">
+          <img src="dnd/dnd-map-overview.png"   alt="Übersichtskarte">
+          <img src="dnd/dnd-book-inside.png"    alt="Buchinnenseiten">
+          <img src="dnd/dnd-map-room-large.png" alt="Große Spielmap">
         </div>
       </div>
     </div>
+  </section>
 
-    <div class="dnd-showcase fade-up">
-      <div class="dnd-showcase-text">
-        <h3 class="h3">Encounter &amp; Editorial Design</h3>
-        <p>
-          Für die Encounter wurden wiederverwendbare Seitenlayouts entwickelt,
-          die sich modular in Spielsessions einbauen lassen. Dabei stand im Fokus,
-          Lesbarkeit mit Atmosphäre zu verbinden und Regeln, Text und Gestaltung
-          sauber zusammenzuführen.
-        </p>
-      </div>
-
-      <div class="dnd-showcase-gallery dnd-gallery-3">
-        <img src="portfolio_website/images/dnd/dnd-encounter-1.png" alt="Encounter Seite 1">
-        <img src="portfolio_website/images/dnd/dnd-encounter-2.png" alt="Encounter Seite 2">
-        <img src="portfolio_website/images/dnd/dnd-encounter-3.png" alt="Encounter Seite 3">
-      </div>
-    </div>
-
-    <div class="dnd-showcase fade-up">
-      <div class="dnd-showcase-text">
-        <h3 class="h3">Digitale Präsentation</h3>
-        <p>
-          Neben den Printmedien entstand auch eine digitale Präsentation des Projekts.
-          Die Herausforderung lag darin, die gestalterische Atmosphäre der Printwelt
-          trotz Plattformvorgaben und Webumgebung konsequent beizubehalten.
-        </p>
-      </div>
-
-      <div class="dnd-device-row">
-        <div class="dnd-device-phone">
-          <img src="portfolio_website/images/dnd/dnd-mobile.png" alt="Mobile Darstellung des Projekts">
-        </div>
-        <div class="dnd-device-desktop">
-          <img src="portfolio_website/images/dnd/dnd-website.png" alt="Website Darstellung des Projekts">
-        </div>
-      </div>
-    </div>
-
-    <div class="dnd-showcase fade-up">
-      <div class="dnd-showcase-text">
-        <h3 class="h3">Grafiken &amp; Spielwelt</h3>
-        <p>
-          Ergänzt wurde das Projekt durch visuelle Elemente wie Spielmaps,
-          Buchinnenseiten und weitere grafische Assets. So entstand eine Welt,
-          die nicht nur erzählt, sondern visuell konsequent geführt wurde.
-        </p>
-      </div>
-
-      <div class="dnd-showcase-gallery dnd-gallery-3">
-        <img src="portfolio_website/images/dnd/dnd-map-overview.png" alt="Übersichtskarte">
-        <img src="portfolio_website/images/dnd/dnd-book-inside.png" alt="Buchinnenseiten">
-        <img src="portfolio_website/images/dnd/dnd-map-room-large.png" alt="Große Spielmap">
-      </div>
-    </div>
-  </div>
-</section>
-
-  <!-- ============================================================
-       LEBENSLAUF
-  ============================================================ -->
+  <!-- LEBENSLAUF -->
   <section>
     <div id="workflow">
       <div class="section-header fade-up">
-        <h2 class="h-display h2">Lebenslauf<br></h2>
+        <h2 class="h-display h2">Lebenslauf</h2>
         <p>Woher ich komme, wie mein Weg war und wo ich aktuell stehe</p>
       </div>
 
@@ -1685,12 +1622,12 @@
             <div class="step-line"></div>
           </div>
           <div class="step-body">
-            <h4>McCann Erickson GmbH in Düsseldorf:</h4>
-            <p>Auszubildene Mediengestalterin mit Fachrichtung: Digital & Print.</p>
+            <h4>McCann Erickson GmbH in Düsseldorf</h4>
+            <p>Auszubildene Mediengestalterin mit Fachrichtung: Digital &amp; Print.</p>
             <div class="step-items">
-              <div class="step-item"><span class="step-item-num">Print</span> Werbebanner / -plakate / agenanzeigen / Messestände</div>
-              <div class="step-item"><span class="step-item-num">Digital Bereich</span> Social Media Content / DOOH / Bildretusche</div>
-              <div class="step-item"><span class="step-item-num">Sonstiges</span> Leitung eines Fotostootings</div>
+              <div class="step-item"><span class="step-item-num">Print</span> Werbebanner / -plakate / Agenzeigen / Messestände</div>
+              <div class="step-item"><span class="step-item-num">Digital</span> Social Media Content / DOOH / Bildretusche</div>
+              <div class="step-item"><span class="step-item-num">Sonstiges</span> Leitung eines Fotoshootings</div>
             </div>
           </div>
         </div>
@@ -1701,13 +1638,13 @@
             <div class="step-line"></div>
           </div>
           <div class="step-body">
-            <h4>Schulbildung:</h4>
-            <p>Hier wird Geschichte vor der Kamera lebendig. Wir fangen jede Szene mit der richtigen Stimmung und Beleuchtung ein.</p>
+            <h4>Schulbildung</h4>
+            <p>Mein schulischer Werdegang.</p>
             <div class="step-items">
-              <div class="step-item"><span class="step-item-num">2021-2024</span> Berufsausbildung am Albrecht-Dürer-Berufskolleg in Düsseldorf</div>
-              <div class="step-item"><span class="step-item-num">2018-2021</span> Allgemeine Hochschulreife an der Gesamtschule Hard</div>
-              <div class="step-item"><span class="step-item-num">2012-2018</span> Mittlerer Schulabschluss an der Gesamtschule Hardt</div>
-              <div class="step-item"><span class="step-item-num">2008-2012</span> Grundschulabschluss an der Gem. Grundschule Waldniel</div>
+              <div class="step-item"><span class="step-item-num">2021–2024</span> Berufsausbildung am Albrecht-Dürer-Berufskolleg in Düsseldorf</div>
+              <div class="step-item"><span class="step-item-num">2018–2021</span> Allgemeine Hochschulreife an der Gesamtschule Hardt</div>
+              <div class="step-item"><span class="step-item-num">2012–2018</span> Mittlerer Schulabschluss an der Gesamtschule Hardt</div>
+              <div class="step-item"><span class="step-item-num">2008–2012</span> Grundschulabschluss an der Gem. Grundschule Waldniel</div>
             </div>
           </div>
         </div>
@@ -1715,31 +1652,25 @@
     </div>
   </section>
 
-  <!-- ============================================================
-     CTA BANNER
-============================================================ -->
-<section id="cta">
-  <div class="cta-banner fade-up">
-    <div class="cta-bg"></div>
-    <div class="cta-content">
-      <h2 class="h-display h2">Lass uns etwas<br>Unvergessliches schaffen</h2>
+  <!-- CTA -->
+  <section id="cta">
+    <div class="cta-banner fade-up">
+      <div class="cta-bg"></div>
+      <div class="cta-content">
+        <h2 class="h-display h2">Lass uns etwas<br>Unvergessliches schaffen</h2>
+      </div>
     </div>
-  </div>
+    <div style="background:var(--color-accent); border-radius:var(--radius-lg); padding:28px 40px; margin-top:16px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+      <span style="font-family:var(--font-display); font-size:22px; font-weight:800; text-transform:uppercase; color:#0d0d0d; letter-spacing:0.02em;">
+        Bereit, Ideen gemeinsam umzusetzen?
+      </span>
+      <a href="mailto:laura.strathmann77@gmail.com" class="btn" style="background:#0d0d0d; color:var(--color-accent);">
+        Schreib mir gerne!
+      </a>
+    </div>
+  </section>
 
-  <div style="background:var(--color-accent); border-radius:var(--radius-lg); padding:28px 40px; margin-top:16px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
-    <span style="font-family:var(--font-display); font-size:22px; font-weight:800; text-transform:uppercase; color:#0d0d0d; letter-spacing:0.02em;">
-      Bereit, Ideen gemeinsam umzusetzen?
-    </span>
-    <a href="mailto:laura.strathmann77@gmail.com" class="btn" style="background:#0d0d0d; color:var(--color-accent);">
-      Schreib mir gerne! 
-    </a>
-  </div>
-</section>
-
-
-  <!-- ============================================================
-       FOOTER
-  ============================================================ -->
+  <!-- FOOTER -->
   <footer>
     <div class="footer-top">
       <div class="footer-brand">
@@ -1748,13 +1679,13 @@
       </div>
       <div class="footer-col">
         <h5>Sections</h5>
-        <li><a href="#hero">Hero</a></li>
-      <li><a href="#ueber">Über mich</a></li>
-      <li><a href="#cases">Überblick</a></li>
-      <li><a href="#actual">Aktuelles</a></li>
-      <li><a href="#dnd-project">Privates Projekt</a></li>
-      <li><a href="#workflow">Lebenslauf</a></li>
-      <li><a href="#cta">Kontakt</a></li>
+        <a href="#hero">Hero</a>
+        <a href="#ueber">Über mich</a>
+        <a href="#cases">Überblick</a>
+        <a href="#actual">Aktuelles</a>
+        <a href="#dnd-project">Privates Projekt</a>
+        <a href="#workflow">Lebenslauf</a>
+        <a href="#cta">Kontakt</a>
       </div>
       <div class="footer-col footer-contact">
         <h5>Kontakt</h5>
@@ -1767,10 +1698,7 @@
     </div>
   </footer>
 
-  <!-- ============================================================
-       SCROLL ANIMATION SCRIPT
-  ============================================================ -->
-   <script>
+  <script>
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
@@ -1778,7 +1706,8 @@
         }
       });
     }, { threshold: 0.1 });
- 
+
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
   </script>
-</body></html>
+</body>
+</html>
