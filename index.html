@@ -64,7 +64,9 @@
     ul {
       list-style: none;
     }
-
+/* ================================================
+         headlines
+      ================================================ */
     .h-display {
       font-family: var(--font-display);
       font-weight: 800;
@@ -123,7 +125,9 @@
       border-color: var(--color-accent);
       color: var(--color-accent);
     }
-
+/* ================================================
+         Navigation
+      ================================================ */
     nav {
       position: fixed;
       top: 0;
@@ -194,7 +198,9 @@
       border-color: var(--color-accent);
       color: var(--color-accent);
     }
-
+/* ================================================
+        Hero
+      ================================================ */
     #hero {
       min-height: 100vh;
       display: flex;
@@ -293,7 +299,9 @@
     .social-proof-text strong {
       color: var(--color-text);
     }
-
+/* ================================================
+         clients
+      ================================================ */
     #clients {
       border-top: 1px solid var(--color-muted);
       border-bottom: 1px solid var(--color-muted);
@@ -354,7 +362,9 @@
       from { transform: translateX(0); }
       to   { transform: translateX(-50%); }
     }
-
+/* ================================================
+         Über mich
+      ================================================ */
     #ueber {
       position: relative;
       width: 100%;
@@ -451,7 +461,9 @@
     .ueber-grid-item.tall {
       height: 368px;
     }
-
+/* ================================================
+         Überblick
+      ================================================ */
     #cases {
       padding: var(--section-pad);
       background: var(--color-bg-alt);
@@ -570,98 +582,110 @@
       font-style: italic;
       color: rgba(255,255,255,0.65);
     }
-
+/* ================================================
+         Aktuelles
+      ================================================ */
     #actual {
-      max-width: none;
-      width: 100%;
-      padding: 100px 5%;
-    }
+  position: relative;
+  max-width: none;
+  width: 100%;
+  padding: 100px 0;
+  overflow: hidden;
+}
+#actual .section-header {
+  padding: 0 5%;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 3;
+}
+#actual::before,
+#actual::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 140px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+#actual::before {
+  left: 0;
+  background: linear-gradient(to right, var(--color-bg), transparent);
+}
+#actual::after {
+  right: 0;
+  background: linear-gradient(to left, var(--color-bg), transparent);
+}
+.actual-marquee {
+  margin-top: 30px;
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.actual-marquee-track {
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
+  width: max-content;
+  animation: actual-scroll 45s linear infinite;
+  will-change: transform;
+}
+.actual-card {
+  flex: 0 0 auto;
+  width: 300px;
+}
+.actual-photo {
+  width: 300px;
+  height: 300px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  background: var(--color-bg-card);
+  margin-bottom: 20px;
+  border: 1px solid var(--color-border);
+  transition: transform 0.3s ease;
+  transform-origin: center;
+  backface-visibility: hidden;
+}
+.actual-photo:hover {
+  transform: scale(1.08);
+}
+.actual-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.actual-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: var(--color-accent);
+}
+.actual-card .role {
+  font-size: 12px;
+  color: var(--color-muted);
+  margin-bottom: 12px;
+  letter-spacing: 0.05em;
+}
+.actual-card p {
+  font-size: 13px;
+  color: rgba(255,255,255,0.55);
+  font-weight: 300;
+  margin-bottom: 16px;
+}
 
-    .actual-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(400px, 1fr));
-      gap: 24px;
-      margin-top: 60px;
-    }
-
-    #actual::before,
-    #actual::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      width: 100px;
-      height: 100%;
-      z-index: 2;
-      pointer-events: none;
-    }
-
-    #actual::before {
-      left: 0;
-      background: linear-gradient(to right, black, transparent);
-    }
-
-    #actual::after {
-      right: 0;
-      background: linear-gradient(to left, black, transparent);
-    }
-
-    .actual-photo {
-      width: 300px;
-      height: 300px;
-      border-radius: var(--radius-lg);
-      overflow: hidden;
-      background: var(--color-bg-card);
-      margin-bottom: 20px;
-      border: 1px solid var(--color-border);
-      transition: transform 0.3s ease;
-      transform-origin: center;
-    }
-
-    .actual-photo:hover {
-      transform: scale(1.08);
-    }
-
-    .actual-photo img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .actual-card h4 {
-      font-size: 16px;
-      font-weight: 600;
-      margin-bottom: 4px;
-      color: var(--color-accent);
-    }
-
-    .actual-card .role {
-      font-size: 12px;
-      color: var(--color-muted);
-      margin-bottom: 12px;
-      letter-spacing: 0.05em;
-    }
-
-    .actual-card p {
-      font-size: 13px;
-      color: rgba(255,255,255,0.55);
-      font-weight: 300;
-      margin-bottom: 16px;
-    }
-
-    .actual-marquee {
-      margin-top: 30px;
-      display: flex;
-      overflow: hidden;
-    }
-
-    .actual-marquee-track {
-      display: flex;
-      gap: 50px;
-      align-items: center;
-      animation: scroll 25s linear infinite;
-      width: max-content;
-    }
-
+@keyframes actual-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+    /* ================================================
+         DND
+      ================================================ */
     #dnd-project {
       position: relative;
       background: #111111;
@@ -884,7 +908,9 @@
       .footer-top { grid-template-columns: 1fr; }
       .footer-bottom { flex-direction: column; text-align: center; }
     }
-
+/* ================================================
+         CTA
+      ================================================ */
     #cta {
       padding: 0 5%;
       margin: 80px auto;
@@ -927,7 +953,9 @@
       justify-content: center;
       flex-wrap: wrap;
     }
-
+/* ================================================
+         Lebenslauf
+      ================================================ */
     #workflow {
       padding: var(--section-pad);
       max-width: var(--max-width);
@@ -1028,7 +1056,9 @@
       font-weight: 800;
       color: var(--color-accent);
     }
-
+/* ================================================
+         Footer
+      ================================================ */
     footer {
       background: var(--color-bg-alt);
       border-top: 1px solid var(--color-border);
