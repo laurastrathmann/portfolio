@@ -748,7 +748,6 @@
       font-weight: 300;
       margin-top: 16px;
     }
-
     .dnd-grid {
       display: grid;
       grid-template-columns: 0.95fr 1.05fr;
@@ -756,32 +755,40 @@
       align-items: center;
       margin-bottom: 96px;
     }
-
     .dnd-copy h3,
     .dnd-showcase-text h3 {
       margin-bottom: 20px;
-      font-family: var(--font-display);
-      font-size: clamp(22px, 3vw, 34px);
-      font-weight: 800;
-      text-transform: uppercase;
-      line-height: 1;
+     font-family: var(--font-display);
+     font-size: clamp(22px, 3vw, 34px);
+     font-weight: 800;
+     text-transform: uppercase;
+     line-height: 1;
     }
-
-    .dnd-copy p,
+   .dnd-copy p,
+   .dnd-showcase-text p {
+     color: rgba(255,255,255,0.68);
+     font-weight: 300;
+     margin-bottom: 16px;
+     max-width: 620px;
+    }
+    .dnd-copy {
+    text-align: left;
+    }
+    .dnd-showcase-text {
+     text-align: center;
+     max-width: 760px;
+     margin: 0 auto 28px;
+    }
     .dnd-showcase-text p {
-      color: rgba(255,255,255,0.68);
-      font-weight: 300;
-      margin-bottom: 16px;
-      max-width: 620px;
+     margin-left: auto;
+     margin-right: auto;
     }
-
     .dnd-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
       margin-top: 28px;
     }
-
     .dnd-tags span {
       display: inline-flex;
       align-items: center;
@@ -794,17 +801,14 @@
       font-size: 13px;
       font-weight: 500;
     }
-
     .dnd-hero-media {
       position: relative;
     }
-
     .dnd-collage {
       display: grid;
       grid-template-columns: 1.1fr 1fr;
       gap: 12px;
     }
-
     .dnd-collage img {
       width: 100%;
       height: 100%;
@@ -814,12 +818,10 @@
       background: var(--color-bg-card);
       box-shadow: 0 10px 30px rgba(0,0,0,0.25);
     }
-
     .dnd-collage img:nth-child(1) {
       grid-row: span 2;
       min-height: 480px;
     }
-
     .dnd-collage img:nth-child(2),
     .dnd-collage img:nth-child(3),
     .dnd-collage img:nth-child(4) {
@@ -1632,9 +1634,9 @@
           </p>
         </div>
         <div class="dnd-showcase-gallery dnd-gallery-3">
-          <img src="dnd/dnd-encounter-1.png" alt="Encounter Seite 1">
-          <img src="dnd/dnd-encounter-2.png" alt="Encounter Seite 2">
-          <img src="dnd/dnd-encounter-3.png" alt="Encounter Seite 3">
+          <img src="dnd/encounter/encounter1.jpeg" alt="Encounter Seite 1">
+          <img src="dnd/encounter/encounter2.jpeg" alt="Encounter Seite 2">
+          <img src="dnd/encounter/encounter3.jpg" alt="Encounter Seite 3">
         </div>
       </div>
 
