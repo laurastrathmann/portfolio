@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Impressum – Laura Strathmann</title>
+  <style>
+    :root {
+      --color-bg: #0d0d0d;
+      --color-bg-card: #181818;
+      --color-bg-alt: #141414;
+      --color-accent: #d4f53c;
+      --color-text: #ffffff;
+      --color-muted: #9a9a9a;
+      --color-border: #2a2a2a;
+      --max-width: 900px;
+      --radius-lg: 8px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    header, footer {
+      border-bottom: 1px solid var(--color-border);
+      background: rgba(13,13,13,0.96);
+    }
+
+    header {
+      padding: 24px 5%;
+    }
+
+    .brand {
+      font-size: 22px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    main {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 80px 5%;
+    }
+
+    .card {
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-lg);
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: clamp(32px, 6vw, 58px);
+      color: var(--color-accent);
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 28px 0 12px;
+    }
+
+    p, li {
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 12px;
+    }
+
+    a {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .muted {
+      color: var(--color-muted);
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 28px;
+    }
+
+    footer {
+      border-top: 1px solid var(--color-border);
+      border-bottom: none;
+      padding: 24px 5%;
+    }
+
+    .footer-row {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .footer-row a, .footer-row p {
+      font-size: 12px;
+      color: var(--color-muted);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Laura Strathmann</div>
+  </header>
+
+  <main>
+    <div class="card">
+      <h1>Impressum</h1>
+
+      <h2>Angaben gemäß § 5 DDG</h2>
+      <p>
+        Laura Strathmann<br>
+        Sankt-Christophorus-Straße 58<br>
+        41179 Mönchengladbach
+        Deutschland
+      </p>
+
+      <h2>Kontakt</h2>
+      <p>
+        Telefon: <a href="tel:+491793714023">+49 179 3714023</a><br>
+        E-Mail: <a href="mailto:laura.strathmann77@gmail.com">laura.strathmann77@gmail.com</a>
+      </p>
+
+      <h2>Verantwortlich für journalistisch-redaktionelle Inhalte gemäß § 18 Abs. 2 MStV</h2>
+      <p>
+        Laura Strathmann<br>
+        Sankt-Christophorus-Straße 58<br>
+        41179 Mönchengladbach
+      </p>
+
+      <h2>Inhalt der Website</h2>
+      <p>
+        Diese Website dient der Präsentation meines Portfolios und beruflicher Arbeiten.
+      </p>
+
+      <a class="back" href="index.html">← Zurück zur Startseite</a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-row">
+      <p>© 2026 Laura Strathmann</p>
+      <div>
+        <a href="index.html">Startseite</a> ·
+        <a href="datenschutz.html">Datenschutz</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
