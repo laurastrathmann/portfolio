@@ -1122,6 +1122,19 @@
       opacity: 1;
       transform: translateY(0);
     }
+    .footer-legal {
+     display: flex;
+     gap: 18px;
+     flex-wrap: wrap;
+    }
+    .footer-legal a {
+     font-size: 12px;
+     color: var(--color-muted);
+     transition: color 0.2s;
+    }
+    .footer-legal a:hover {
+     color: var(--color-text);
+    }
   </style>
 </head>
 <body>
@@ -1729,7 +1742,11 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2026 Laura Strathmann. Alle Rechte vorbehalten.</p>
+       <p>© 2026 Laura Strathmann. Alle Rechte vorbehalten.</p>
+       <div class="footer-legal">
+         <a href="impressum.html">Impressum</a>
+         <a href="datenschutz.html">Datenschutz</a>
+       </div>
     </div>
   </footer>
 
